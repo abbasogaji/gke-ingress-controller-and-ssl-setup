@@ -42,7 +42,7 @@ helm install app-ingress ingress-nginx/ingress-nginx \
      --set defaultBackend.nodeSelector."beta\.kubernetes\.io/os"=linux \
      --set controller.service.loadBalancerIP=XXXXXXXXXXXX
 
-# the XXXXXXXX represents the RESERVED STATIC IP CREATED
+# the XXXXXXXX represents the RESERVED REGIONAL STATIC IP CREATED
 
 
 4) # Create a namespace for Cert Manager
