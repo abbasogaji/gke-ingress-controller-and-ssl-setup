@@ -38,8 +38,6 @@ helm install app-ingress ingress-nginx/ingress-nginx \
      --namespace ingress \
      --create-namespace \
      --set controller.replicaCount=2 \
-     --set controller.nodeSelector."beta\.kubernetes\.io/os"=linux \
-     --set defaultBackend.nodeSelector."beta\.kubernetes\.io/os"=linux \
      --set controller.service.loadBalancerIP=XXXXXXXXXXXX
 
 # the XXXXXXXX represents the RESERVED REGIONAL STATIC IP CREATED
